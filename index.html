@@ -12,9 +12,17 @@
       name="keywords"
       content="Front, End, Developer, Marek, Trybuła, Portfolio, HTML, CSS, JavaScript, React"
     />
-    <title>Marek Trybuła - Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon image_src" href="apple-touch-icon.png" />
     <meta name="author" content="Marek Trybuła" />
+    <title>Marek Trybuła - Portfolio</title>
+
     <link rel="stylesheet" href="css/style.min.css" />
+    <script>
+      if (navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
     <script src="main.js" defer></script>
   </head>
   <body>
