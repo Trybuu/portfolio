@@ -1,0 +1,47 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  .about__skills {
+    padding: 1rem 0;
+    .skills-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      .about__skill {
+        width: 33%;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        text-align: center;
+        border-radius: 5px;
+        border: 2px solid aliceblue;
+        background-color: transparent;
+        cursor: default;
+        transition: 0.2s ease-in-out;
+        &:nth-last-of-type(1) {
+          flex-grow: 1;
+        }
+
+        &:nth-child(even):hover {
+          transform: rotate(-7deg);
+        }
+        &:nth-child(odd):hover {
+          transform: rotate(10deg);
+        }
+      }
+    }
+  }
+}
+
+@include laptop {
+  .about {
+    padding: 2rem 4rem;
+  }
+}

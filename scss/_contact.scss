@@ -1,0 +1,51 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  .form {
+    .form__input {
+      width: 100%;
+      margin: 1rem 0;
+      padding: 1rem;
+      border: 2px solid aliceblue;
+      background-color: transparent;
+      border-radius: 5px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      color: aliceblue;
+      outline: 0;
+      transition: 0.2s ease;
+      &:focus {
+        transform: scale(1.03);
+      }
+
+      &.text {
+        height: 200px;
+        resize: none;
+      }
+    }
+    .button-check {
+      font-size: 16px;
+    }
+    @include tablet {
+      .form__input {
+        font-size: 20px;
+      }
+      .button-check {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .contact {
+    padding: 2rem 4rem;
+  }
+}

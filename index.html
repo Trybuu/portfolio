@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="main.js" defer></script>
+    <title>Marek Trybuła - Portfolio</title>
+  </head>
+  <body>
+    <!-- <nav class="nav">
+      <ul class="nav__list active">
+        <li class="nav__element"><a href="#" class="nav__link">Start</a></li>
+        <li class="nav__element"><a href="#" class="nav__link">About me</a></li>
+        <li class="nav__element"><a href="#" class="nav__link">Projects</a></li>
+        <li class="nav__element"><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__button-wrapper">
+        <div class="nav__button-wrapper_element-1">
+          <span class="nav__button-wrapper_plus">+</span>
+        </div>
+        <div class="nav__button-wrapper_element-2"></div>
+        <div class="nav__button-wrapper_element-3"></div>
+      </div>
+    </nav> -->
+    <div class="header-wrapper">
+      <header class="header">
+        <h1 class="header__title">Hi I'm Marek</h1>
+        <h2 class="header__title-little">Front End Developer</h2>
+        <a href="#" class="button-check">About</a>
+      </header>
+    </div>
+
+    <section class="about">
+      <div class="about__info">
+        <h3 class="section-title">About me</h3>
+        <p class="section-text">
+          Hello my name is Marek Trybuła, I’m 22 years old, I was born and live
+          in Poland. I study IT in Bussines and my speciality, that i have
+          choose is Front End Developer. I’m in my last year of studies. My
+          journey with programing I started in IT Technical School. Before I end
+          School I decided that I want to work as Front End Developer. Now I’m
+          looking for my first job at this position. I’m very motivated and
+          consistent person, I set goals and I don't stop going before I don't
+          achive them. Below you can download my resume.
+        </p>
+        <a class="button-check" href="/files/cv.pdf" download="marektrybula-cv"
+          >Resume</a
+        >
+      </div>
+      <div class="about__skills">
+        <h3 class="section-title">Skills</h3>
+        <p class="section-text">
+          I’m curently learning React, I have first projects behind me. I have
+          solid understanding of HTML and CSS. I know SASS and BEM metodology. I
+          know JavaScript (ES6). I can create something in it, but I feel that I
+          need to better understand this language. I know RWD technics, I create
+          my projects in mobile first approach. I know basics of GIT.
+        </p>
+        <div class="skills-wrapper">
+          <span class="about__skill">HTML</span>
+          <span class="about__skill">CSS</span>
+          <span class="about__skill">JS</span>
+          <span class="about__skill">ES6</span>
+          <span class="about__skill">React</span>
+          <span class="about__skill">Sass</span>
+          <span class="about__skill">BEM</span>
+          <span class="about__skill">RWD</span>
+          <span class="about__skill">GitHub</span>
+          <span class="about__skill">GIT</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h3 class="section-title">Projects</h3>
+      <p class="section-text">
+        I want to present you my recent projects. You can look at my
+        presentation on Youtube or check code by yourself.
+      </p>
+      <div class="slider">
+        <div class="slider__slides"></div>
+        <div class="slider__controll">
+          <div class="icon slider__icon">
+            <img
+              class="slider__icon img"
+              src="images/arrow-left-solid.svg"
+              alt="slide-left"
+            />
+          </div>
+
+          <div class="slider__buttons">
+            <a class="slider__button" href="">Code</a>
+            <a class="slider__button" href="">Presentation</a>
+          </div>
+
+          <div class="icon slider__icon">
+            <img
+              class="slider__icon img"
+              src="images/arrow-right-solid.svg"
+              alt="slide-right"
+            />
+          </div>
+        </div>
+      </div>
+
+      <p class="section-text">Check my GitHub to see more projects.</p>
+      <a href="https://github.com/Trybuu" target="_blank" class="button-check"
+        >GitHub</a
+      >
+    </section>
+
+    <section class="contact">
+      <h3 class="section-title">Contact me</h3>
+      <p class="section-text">
+        If you want to make my dream true and give me a job proposition feel
+        free ;) Even If you are here just to look around let me know that you
+        been here.
+      </p>
+      <form
+        class="form"
+        action="https://formsubmit.co/info.marektrybula@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New email!" />
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <textarea
+          class="form__input text"
+          type="text"
+          name="message"
+          placeholder="Type a message..."
+          required
+        ></textarea>
+
+        <input
+          type="hidden"
+          name="_next"
+          value="https://http://127.0.0.1/pages/thankyou.html"
+        />
+
+        <button class="button-check" type="submit">Send message</button>
+      </form>
+    </section>
+    <div class="footer-wrapper">
+      <footer class="footer">
+        <h3 class="section-title">Find me in social media</h3>
+        <p class="section-text">
+          Maybe there's no content yet. I will try to create something ;)
+        </p>
+        <div class="social-media-wrapper">
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/trybulamarek/" target="_blank">
+              <img
+                class="icon__fa"
+                src="/images/linkedin-brands.svg"
+                alt="linkedin-icon link"
+              />
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://github.com/Trybuu" target="_blank">
+              <img
+                class="icon__fa"
+                src="/images/github-brands.svg"
+                alt="github-icon link"
+              />
+            </a>
+          </div>
+          <div class="icon">
+            <a href="">
+              <img
+                class="icon__fa"
+                src="/images/square-facebook-brands.svg"
+                alt="facebook-icon link"
+              />
+            </a>
+          </div>
+          <div class="icon">
+            <a
+              href="https://www.youtube.com/channel/UCFWH6QUQTNtchwJBWjOyiiQ"
+              target="_blank"
+            >
+              <img
+                class="icon__fa"
+                src="/images/square-youtube-brands.svg"
+                alt="youtube-icon link"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
