@@ -9,3 +9,15 @@
     @content;
   }
 }
+
+@mixin mobile-landscape {
+  @media only screen and(max-height: 420px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media only screen and(min-width: 600px) {
+    @content;
+  }
+}
