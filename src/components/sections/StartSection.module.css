@@ -1,0 +1,77 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-image: url('/images/portrait.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  display: none;
+  box-shadow: -100px 10px 1000px var(--accent-color);
+  animation-name: pulse;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+/* .image:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  transform: translateY(-40%);
+  width: 40%;
+  height: 100%;
+  background-image: url('/shapes/dots.svg');
+  background-repeat: no-repeat;
+} */
+
+@media screen and (min-width: 768px) {
+  .content {
+    width: 50%;
+  }
+
+  .image {
+    display: block;
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: -100px 10px 1000px var(--accent-color);
+  }
+
+  25% {
+    box-shadow: -200px 150px 1000px rgb(75, 84, 219);
+  }
+
+  50% {
+    box-shadow: 100px -200px 1000px rgb(166, 74, 157);
+  }
+
+  75% {
+    box-shadow: 100px 200px 1000px rgb(48, 224, 244);
+  }
+
+  100% {
+    box-shadow: -100px 10px 1000px var(--accent-color);
+  }
+}

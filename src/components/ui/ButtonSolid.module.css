@@ -1,0 +1,32 @@
+.button-solid {
+  position: relative;
+  padding: 1rem 2rem;
+  background-color: var(--foreground-color);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.button-solid::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: calc(100% + 15px);
+  width: calc(100% + 15px);
+  border: 2px solid var(--accent-color);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.button-solid:hover::after {
+  top: 0;
+  left: 0;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  opacity: 1;
+}
+
+.button-solid:hover {
+  color: var(--accent-color);
+}

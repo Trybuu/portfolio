@@ -1,0 +1,9 @@
+.description {
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+  border: 1px solid var(--accent-color);
+}
+
+.description:hover {
+  background-color: var(--accent-color);
+}

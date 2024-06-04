@@ -1,0 +1,71 @@
+[data-theme='light'] {
+  --background-color: #ffffff;
+  --foreground-color: #e5d4fb;
+  --accent-color: #cba8f9;
+  --secondary-color: #f2f2f2;
+  --primary-text-color: #000000;
+}
+
+[data-theme='dark'] {
+  --background-color: #3a3a3a;
+  --foreground-color: #a05bf9;
+  --accent-color: #7815fa;
+  --secondary-color: #545454;
+  --primary-text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root,
+* {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--primary-text-color);
+  line-height: 130%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px var(--background-color) inset !important;
+  box-shadow: 0 0 0px 1000px var(--background-color) inset !important;
+  -webkit-text-fill-color: var(--primary-text-color) !important;
+  caret-color: auto !important;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 8rem;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}

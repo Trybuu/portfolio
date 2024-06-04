@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 1rem);
+}
+
+.form__input,
+.form__textarea {
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 1px solid var(--accent-color);
+  background-color: transparent;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+}
+
+.form__label--textarea {
+  width: 100%;
+}
+
+.form__textarea {
+  resize: none;
+}

@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footer div {
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+}
+
+.socials__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials__link {
+}
+
+.socials__links svg {
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.socials__links svg:hover {
+  transform: scale(1.1) translateY(-3px);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .socials {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
