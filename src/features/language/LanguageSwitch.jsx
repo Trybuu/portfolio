@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import Button from '../../components/ui/Button'
 
 export default function LanguageSwitch() {
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const [currentLng, setCurrentLng] = useState(i18n.language)
 
@@ -17,13 +17,13 @@ export default function LanguageSwitch() {
         isActive={currentLng === 'en-US'}
         onClick={() => setCurrentLng('en-US')}
       >
-        English
+        {t('settings.english')}
       </Button>
       <Button
         isActive={currentLng === 'pl-PL'}
         onClick={() => setCurrentLng('pl-PL')}
       >
-        Polish
+        {t('settings.polish')}
       </Button>
     </>
   )

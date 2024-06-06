@@ -12,7 +12,7 @@ export default function FooterSection() {
       <footer className={classes['footer']}>
         <div>
           <p>Marek Trybuła | Frontend Developer</p>
-          <p>marektrybula-info@gmail.com</p>
+          <p>info.marektrybula@gmail.com</p>
           <br></br>
           <p>© {year} Marek Trybuła</p>
         </div>

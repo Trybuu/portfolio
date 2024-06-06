@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next'
 import Slider from '../ui/Slider'
 import Title from '../ui/Title'
 import Section from './Section'
 
 export default function ProjectsSection() {
+  const { t } = useTranslation()
+
   const projects = [
     {
       title: 'Codemates',
@@ -29,7 +32,7 @@ export default function ProjectsSection() {
 
   return (
     <Section id="projects">
-      <Title>Projects</Title>
+      <Title>{t('projects.title')}</Title>
       <Slider slides={projects} />
     </Section>
   )

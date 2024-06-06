@@ -28,7 +28,7 @@ i18n
           },
           introduce: {
             hello:
-              'Hello! Im Marek, a Front End Developer passionate about crafting immersive digital experiences.',
+              "Hi, I'm Marek, a Frontend Developer passionate about crafting elegant and user-friendly websites.",
             description:
               'With great attention to detail and a talent for bringing ideas to life, I focus on creating polished, easy-to-use websites and web applications that engage users.',
             button: 'Contact me',
@@ -45,6 +45,25 @@ i18n
             incentiveDesc:
               'In todays digital era, having a website is essential for businesses of all sizes. A website significantly expands customer reach, with 88% of consumers researching products online before purchasing. It enhances credibility, with 75% of consumers judging a companys credibility based on its website design. Websites offer cost-effective marketing, optimize for local search—"near me" searches have grown by over 500%—and provide 24/7 availability, increasing sales and customer satisfaction. Additionally, websites offer valuable insights into customer behavior, aiding in informed business decisions. Overall, a website is crucial for growth and engagement in the digital age.',
           },
+          projects: {
+            title: 'Projects',
+          },
+          contact: {
+            title: 'Contact',
+            desc: "Ready to collaborate? Don't hesitate to reach out! I'm here to help bring your project to life. Fill out the form below and I'll get back to you as soon as possible.",
+            name: 'Your name',
+            email: 'Your email',
+            message: 'Your message',
+            send: 'Send message',
+          },
+          settings: {
+            theme: 'Theme',
+            light: 'Light',
+            dark: 'Dark',
+            language: 'Language',
+            english: 'English',
+            polish: 'Polish',
+          },
         },
       },
       pl: {
@@ -58,9 +77,9 @@ i18n
           },
           introduce: {
             hello:
-              'Witaj! Mam na imię Marek, jestem Front End Developerem pasjonującym się tworzeniem imersyjnych cyfrowych doświadczeń.',
+              'Witaj! Mam na imię Marek, jestem Front End Developerem pasjonującym się tworzeniem eleganckich i przyjaznych dla użytkowników stron internetowych.',
             description:
-              'Z uwagą do najdrobniejszych do detali oraz talentem do wprowadzania pomysłów w życie, skupiam się na tworzeniu kompletnych, przejrzystych stron oraz aplikacji internetowych angażujących użytkowników.',
+              'Z uwagą do najdrobniejszych detali oraz talentem do wprowadzania pomysłów w życie, skupiam się na tworzeniu kompletnych, przejrzystych stron oraz aplikacji internetowych angażujących użytkowników.',
             button: 'Skontaktuj się ze mną',
           },
           about: {
@@ -74,6 +93,25 @@ i18n
             incentive: 'Dlaczego potrzebujesz strony internetowej?',
             incentiveDesc:
               'W dzisiejszej erze cyfrowej posiadanie strony internetowej jest niezbędne dla firm każdej wielkości. Strona internetowa znacznie zwiększa zasięg klientów – 88% konsumentów szuka informacji o produktach w Internecie przed zakupem. Zwiększa wiarygodność – 75% konsumentów ocenia wiarygodność firmy na podstawie projektu jej strony internetowej. Strony internetowe oferują opłacalny marketing, optymalizują się pod kątem wyszukiwania lokalnego – liczba wyszukiwań „w pobliżu mnie” wzrosła o ponad 500% – i zapewniają dostępność 24 godziny na dobę, 7 dni w tygodniu, zwiększając sprzedaż i zadowolenie klientów. Ponadto strony internetowe oferują cenny wgląd w zachowania klientów, pomagając w podejmowaniu świadomych decyzji biznesowych. Ogólnie rzecz biorąc, strona internetowa ma kluczowe znaczenie dla rozwoju i zaangażowania w erze cyfrowej.',
+          },
+          projects: {
+            title: 'Projekty',
+          },
+          contact: {
+            title: 'Kontakt',
+            desc: 'Gotowy na współpracę? Nie wahaj się ze mną skontaktować! Jestem tutaj, aby pomóc Ci wcielić Twój projekt w życie. Wypełnij poniższy formularz, a ja skontaktuję się z Tobą tak szybko, jak to możliwe.',
+            name: 'Twoje imię',
+            email: 'Twój email',
+            message: 'Twoja wiadomość',
+            send: 'Wyślij wiadomość',
+          },
+          settings: {
+            theme: 'Motyw',
+            light: 'Jasny',
+            dark: 'Ciemny',
+            language: 'Język',
+            english: 'Angielski',
+            polish: 'Polski',
           },
         },
       },

@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import ButtonSolid from '../../components/ui/ButtonSolid'
 import classes from './ContactForm.module.css'
 
 export default function ContactForm() {
+  const { t } = useTranslation()
+
   return (
     <form className={classes['form']}>
       <label htmlFor="name" className={classes['form__label']}>
@@ -9,7 +12,7 @@ export default function ContactForm() {
           type="text"
           id="name"
           className={classes['form__input']}
-          placeholder="Your name"
+          placeholder={t('contact.name')}
           autoComplete="given-name"
         />
       </label>
@@ -19,7 +22,7 @@ export default function ContactForm() {
           type="text"
           id="email"
           className={classes['form__input']}
-          placeholder="Your email"
+          placeholder={t('contact.email')}
           autoComplete="email"
         />
       </label>
@@ -30,12 +33,12 @@ export default function ContactForm() {
       >
         <textarea
           id="message"
-          placeholder="Your message"
+          placeholder={t('contact.message')}
           className={classes['form__textarea']}
         ></textarea>
       </label>
 
-      <ButtonSolid>Send message</ButtonSolid>
+      <ButtonSolid>{t('contact.send')}</ButtonSolid>
     </form>
   )
 }

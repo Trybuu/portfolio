@@ -3,8 +3,10 @@ import classes from './Settings.module.css'
 import { useState } from 'react'
 import ThemeSwitch from '../../features/theme/ThemeSwitch'
 import LanguageSwitch from '../../features/language/LanguageSwitch'
+import { useTranslation } from 'react-i18next'
 
 export default function Settings() {
+  const { t } = useTranslation()
   const [isModalActive, setIsModalActive] = useState(false)
 
   const toggleModal = () => {
@@ -23,11 +25,11 @@ export default function Settings() {
         }`}
       >
         <section>
-          <h3>Theme</h3>
+          <h3>{t('settings.theme')}</h3>
           <ThemeSwitch />
         </section>
         <section>
-          <h3>Language</h3>
+          <h3>{t('settings.language')}</h3>
           <LanguageSwitch />
         </section>
       </div>
