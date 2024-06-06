@@ -30,18 +30,6 @@
   animation-iteration-count: infinite;
 }
 
-/* .image:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -20%;
-  transform: translateY(-40%);
-  width: 40%;
-  height: 100%;
-  background-image: url('/shapes/dots.svg');
-  background-repeat: no-repeat;
-} */
-
 @media screen and (min-width: 768px) {
   .content {
     width: 50%;

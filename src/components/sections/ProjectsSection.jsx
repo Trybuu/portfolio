@@ -9,24 +9,27 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: 'Codemates',
-      photo:
-        'https://images.unsplash.com/photo-1513682121497-80211f36a7d3?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      photo: '/images/codemates.jpg',
       github: 'https://www.github.com',
       live: 'https://www.youtube.com',
+      photoSource:
+        'https://unsplash.com/photos/two-men-using-computer-and-laptop-fSWOVc3e06w?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
     },
     {
       title: 'Codemates',
-      photo:
-        'https://images.unsplash.com/photo-1517586979036-b7d1e86b3345?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      photo: '/images/codemates.jpg',
       github: 'https://www.github.com',
       live: 'https://www.youtube.com',
+      photoSource:
+        'https://unsplash.com/photos/two-men-using-computer-and-laptop-fSWOVc3e06w?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
     },
     {
       title: 'Codemates',
-      photo:
-        'https://images.unsplash.com/photo-1529232076213-d23c9a1974f5?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      photo: '/images/codemates.jpg',
       github: 'https://www.github.com',
       live: 'https://www.youtube.com',
+      photoSource:
+        'https://unsplash.com/photos/two-men-using-computer-and-laptop-fSWOVc3e06w?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
     },
   ]
 
