@@ -9,7 +9,7 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: 'Codemates',
-      photo: '/images/codemates.jpg',
+      photo: '/images/codemates.webp',
       github: 'https://www.github.com',
       live: 'https://www.youtube.com',
       photoSource:
