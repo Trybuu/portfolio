@@ -25,6 +25,9 @@ i18n
             projects: 'Projects',
             contact: 'Contact',
             resume: 'Resume',
+            ariaLabelClose: 'Close navigation',
+            ariaLabelOpen: 'Open navigation',
+            scrollTo: 'Scroll to section ',
           },
           introduce: {
             hello:
@@ -63,6 +66,8 @@ i18n
             language: 'Language',
             english: 'English',
             polish: 'Polish',
+            ariaLabelClose: 'Close settings',
+            ariaLabelOpen: 'Open settings',
           },
         },
       },
@@ -74,6 +79,9 @@ i18n
             projects: 'Projekty',
             contact: 'Kontakt',
             resume: 'Pobierz Cv',
+            ariaLabelClose: 'Zamknij nawigację',
+            ariaLabelOpen: 'Otwórz nawigację',
+            scrollTo: 'Przewiń do sekcji ',
           },
           introduce: {
             hello:
@@ -112,6 +120,8 @@ i18n
             language: 'Język',
             english: 'Angielski',
             polish: 'Polski',
+            ariaLabelClose: 'Zamknij ustawienia',
+            ariaLabelOpen: 'Otwórz ustawienia',
           },
         },
       },

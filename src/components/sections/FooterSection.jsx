@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { TbBrandLeetcode } from 'react-icons/tb'
 
 import classes from './FooterSection.module.css'
@@ -19,17 +19,29 @@ export default function FooterSection() {
 
         <div className={classes['socials']}>
           <p className={classes['socials__links']}>
-            <a href="" className={classes['socials__link']}>
-              <FaFacebook />
+            <a
+              href="https://www.linkedin.com/in/trybulamarek/"
+              aria-label="Marek Trybuła Linkedin"
+              target="_blank"
+              className={classes['socials__link']}
+            >
+              <FaLinkedin aria-hidden={true} focusable={false} />
             </a>
-            <a href="" className={classes['socials__link']}>
-              <FaGithub />
+            <a
+              href="https://github.com/Trybuu"
+              aria-label="Marek Trybuła Github"
+              target="_blank"
+              className={classes['socials__link']}
+            >
+              <FaGithub aria-hidden={true} focusable={false} />
             </a>
-            <a href="" className={classes['socials__link']}>
-              <FaLinkedin />
-            </a>
-            <a href="" className={classes['socials__link']}>
-              <TbBrandLeetcode />
+            <a
+              href="https://leetcode.com/u/Trybuu/"
+              aria-label="Marek Trybuła Leetcode"
+              target="_blank"
+              className={classes['socials__link']}
+            >
+              <TbBrandLeetcode aria-hidden={true} focusable={false} />
             </a>
           </p>
         </div>

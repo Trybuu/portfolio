@@ -16,8 +16,20 @@ export default function Settings() {
 
   return (
     <div className={classes['settings-wrapper']}>
-      <button className={classes['settings-btn']} onClick={toggleModal}>
-        {isModalActive ? <IoClose /> : <IoSettingsOutline />}
+      <button
+        className={classes['settings-btn']}
+        onClick={toggleModal}
+        aria-label={
+          isModalActive
+            ? t('settings.ariaLabelClose')
+            : t('settings.ariaLabelOpen')
+        }
+      >
+        {isModalActive ? (
+          <IoClose aria-hidden={true} focusable={false} />
+        ) : (
+          <IoSettingsOutline aria-hidden={true} focusable={false} />
+        )}
       </button>
       <div
         className={`${classes['settings-modal']} ${

@@ -62,28 +62,52 @@ export default function NavBar() {
         }`}
       >
         <li>
-          <Link to="start" smooth={true} duration={500}>
+          <Link
+            to="start"
+            smooth={true}
+            duration={500}
+            role="button"
+            aria-label={`${t('nav.scrollTo')} ${t('nav.start')}`}
+          >
             <Button isActive={activeSection === 'start'}>
               {t('nav.start')}
             </Button>
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            role="button"
+            aria-label={`${t('nav.scrollTo')} ${t('nav.about')}`}
+          >
             <Button isActive={activeSection === 'about'}>
               {t('nav.about')}
             </Button>
           </Link>
         </li>
         <li>
-          <Link to="projects" smooth={true} duration={500}>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            role="button"
+            aria-label={`${t('nav.scrollTo')} ${t('nav.projects')}`}
+          >
             <Button isActive={activeSection === 'projects'}>
               {t('nav.projects')}
             </Button>
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500}>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            role="button"
+            aria-label={`${t('nav.scrollTo')} ${t('nav.contact')}`}
+          >
             <Button isActive={activeSection === 'contact'}>
               {t('nav.contact')}
             </Button>
@@ -109,11 +133,19 @@ export default function NavBar() {
         </div>
 
         {isMobileNavOpen ? (
-          <IoClose onClick={() => setIsMobileNavOpen(!isMobileNavOpen)} />
-        ) : (
-          <RxHamburgerMenu
+          <button
             onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
-          />
+            aria-label={t('nav.ariaLabelClose')}
+          >
+            <IoClose aria-hidden={true} focusable={false} />
+          </button>
+        ) : (
+          <button
+            onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+            aria-label={t('nav.ariaLabelOpen')}
+          >
+            <RxHamburgerMenu aria-hidden={true} focusable={false} />
+          </button>
         )}
       </div>
     )
