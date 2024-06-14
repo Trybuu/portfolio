@@ -14,20 +14,17 @@
   min-height: 100vh;
 }
 
-.image {
+/* .image {
   position: relative;
-  width: 200px;
-  height: 200px;
-  background-image: url('/images/portrait.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 50%;
+
   display: none;
-  box-shadow: -100px 10px 1000px var(--accent-color);
-  animation-name: pulse;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+} */
+
+.img {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -35,10 +32,33 @@
     width: 50%;
   }
 
-  .image {
+  .img {
+    position: relative;
     display: block;
-    width: 20vw;
-    height: 20vw;
+    width: 290px;
+  }
+
+  .img > img {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: -100px 10px 1000px var(--accent-color);
+    animation-name: pulse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .img {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .img {
+    width: 380px;
   }
 }
 
