@@ -10,26 +10,34 @@ export default function ProjectsSection() {
     {
       title: 'Codemates',
       photo: '/images/codemates.webp',
-      github: 'https://www.github.com',
-      live: 'https://www.youtube.com',
+      github: 'https://github.com/Trybuu/codemates',
+      live: 'https://chipper-crisp-d209c7.netlify.app/',
       photoSource:
         'https://unsplash.com/photos/two-men-using-computer-and-laptop-fSWOVc3e06w?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
     },
     {
-      title: 'Codemates',
-      photo: '/images/codemates.jpg',
-      github: 'https://www.github.com',
-      live: 'https://www.youtube.com',
+      title: 'Audiophile Ecommerce Frontend',
+      photo: '/images/audiophile.webp',
+      github: 'https://github.com/Trybuu/react-audiophile-ecommerce',
+      live: 'https://unique-cucurucho-18ec32.netlify.app/',
       photoSource:
-        'https://unsplash.com/photos/two-men-using-computer-and-laptop-fSWOVc3e06w?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
+        'https://unsplash.com/@cdx2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplashz',
     },
     {
-      title: 'Codemates',
-      photo: '/images/codemates.jpg',
-      github: 'https://www.github.com',
-      live: 'https://www.youtube.com',
+      title: 'NPM Landing Page',
+      photo: '/images/npm.webp',
+      github: 'https://github.com/Trybuu/npm-landing-page',
+      live: 'https://playful-banoffee-8a4742.netlify.app/',
       photoSource:
-        'https://unsplash.com/photos/two-men-using-computer-and-laptop-fSWOVc3e06w?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
+        'https://unsplash.com/photos/orange-pink-keyboard-oZMUrWFHOB4',
+    },
+    {
+      title: 'Dictionary App',
+      photo: '/images/dictionary.webp',
+      github: 'https://github.com/Trybuu/dictionary-app',
+      live: 'https://playful-pony-6b4ca5.netlify.app/',
+      photoSource:
+        'https://unsplash.com/photos/open-dictionary-U3Ptj3jafX8?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash',
     },
   ]
 

@@ -114,7 +114,9 @@ export default function NavBar() {
           </Link>
         </li>
         <li>
-          <ButtonSolid>{t('nav.resume')}</ButtonSolid>
+          <a href="/files/cv.pdf" download={'Marek Trybula CV'} aria-hidden>
+            <ButtonSolid>{t('nav.resume')}</ButtonSolid>
+          </a>
         </li>
       </ul>
     </nav>

@@ -27,6 +27,7 @@
   flex-direction: column;
   height: 100%;
   transform: scale(1);
+  padding: 1rem;
 }
 
 .slide__content::before {
@@ -62,7 +63,7 @@
 }
 
 .slide__info {
-  padding: 1rem;
+  margin: 1rem;
   z-index: 100;
 }
 

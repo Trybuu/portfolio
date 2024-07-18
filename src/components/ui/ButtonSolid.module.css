@@ -30,3 +30,21 @@
 .button-solid:hover {
   color: var(--primary-text-color);
 }
+
+.button-solid:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-solid:disabled::after,
+.button-solid:disabled:hover::after {
+  top: -10px;
+  left: -10px;
+  height: calc(100% + 15px);
+  width: calc(100% + 15px);
+  opacity: 0;
+}
+
+.button-solid:disabled:hover {
+  color: inherit;
+}

@@ -54,6 +54,7 @@ export default function Slider({ slides }) {
               className={classes['slide']}
               key={index}
               style={{ backgroundImage: `url(${slide.photo})` }}
+              alt={`Photo source link ${slide.photoSource}`}
             >
               <div className={classes['slide__content']}>
                 <div className={classes['slide__no']}>
@@ -63,17 +64,19 @@ export default function Slider({ slides }) {
                 <div className={classes['slide__info']}>
                   <h3>{slide.title}</h3>
                   <p>
-                    <a href={slide.github}>Github</a>
+                    <a href={slide.github} target="_blank">
+                      Github
+                    </a>
                     <span> </span>
-                    <a href={slide.live}>Live preview</a>
+                    <a href={slide.live} target="_blank">
+                      Live preview
+                    </a>
                   </p>
                 </div>
               </div>
             </div>
           )
         })}
-        <div className={classes['slider__slide']}></div>
-        <div className={classes['slider__slide']}></div>
       </div>
       <div className={classes['slider__control']}>
         <IoIosArrowRoundBack onClick={() => controlSlidesPos('left')} />
