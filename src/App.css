@@ -1,0 +1,33 @@
+.motion-container {
+  display: flex;
+  height: 100%;
+  width: 400%;
+}
+
+.section {
+  width: 100vw;
+  height: 100%;
+  padding: 8rem 2rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  z-index: 10;
+}
+
+.fixed-header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+}
